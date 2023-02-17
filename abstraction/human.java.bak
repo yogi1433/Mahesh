@@ -1,0 +1,36 @@
+interface human1
+{
+	abstract void emotions();
+}
+	class Angry implements human1
+	{
+		public void emotions()
+		{
+			System.out.println("angry");
+		}
+	}
+	class happy implements human1
+	{
+		public void emotions()
+		{
+			System.out.println("happy");
+		}
+	}
+	class Situation
+	{
+		static void react(human1 h1)
+		{
+			h1.emotions();
+		}
+	}
+	class human
+	{
+		public static void main(String[]args)
+		{
+			Angry a1=new Angry();
+			 happy h2=new  happy ();
+			 Situation.react(a1);
+			 Situation.react(h2);
+
+		}
+	}

@@ -1,0 +1,45 @@
+interface Animal
+{
+   void noise();
+}
+   class Cat implements Animal
+   {
+	   public void noise()
+	   {
+		   System.out.println("meow ");
+	   }
+   }
+    class Dog implements Animal
+   {
+	   public void noise()
+	   {
+		   System.out.println("bow ");
+	   }
+   }
+    class Snake implements Animal
+   {
+	   public void noise()
+	   {
+		   System.out.println("buss ");
+	   }
+   }
+   class Stimulator
+   {
+	   static void Ansim (Animal a1)
+	   {
+		   a1.noise();
+	   }
+   }
+   class mainclass
+   {
+	   public static void main(String[]args)
+	   {
+		   Cat c1=new Cat();
+		   Dog d1=new Dog();
+		   Snake s1=new Snake();
+           Stimulator.  Ansim (c1);
+		    Stimulator.  Ansim (d1);
+			 Stimulator.  Ansim (s1);
+
+	   }
+   }
